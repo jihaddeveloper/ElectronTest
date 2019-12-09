@@ -1,0 +1,23 @@
+{
+  "name": "electrontest",
+  "version": "1.0.0",
+  "description": "Testing ElectronJS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Md. Jihad Hossain",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "electron": "4.2.6",
+    "electron-reload": "^1.5.0",
+    "knex": "^0.20.2",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.8"
+  }
+}

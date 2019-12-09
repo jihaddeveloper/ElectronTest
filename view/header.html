@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">  
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script> 
+  </head>
+  <body>
+  	<header>
+  		<nav class="navbar navbar-default "style="background-color: #0747a6;" >
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			     <a class="navbar-brand" href="home.jsp">Home</a>
+			      	<!-- <img src="assets/img/lg1.png" width="150" height="30"> -->
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Educational Material<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a class="dropdown-item" href="class%201%20(WS)/intro_class1.html" target="_blank">Class 1</a> </li>
+			            <li><a class="dropdown-item" href="Clss%202%20(WS)/class%202%20intro.html" target="_blank">Class 2</a></li>
+			            <li><a class="dropdown-item" href="class%203%20(WS)/intro%20page.html" target="_blank">Class 3</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <fmt:message key='label.important_links'/><span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="http://www.nctb.gov.bd/" target="_blank">www.nctb.gov.bd</a></li>
+			            <li><a href="http://www.moedu.gov.bd/" target="_blank">www.moedu.gov.bd</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="reg.jsp"><fmt:message key="label.Registration"/></a></li>
+			        
+			        <li><a href="Registration_Controller_Servlet"> <fmt:message key="label.students_list"/></a></li>
+			        
+			       <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><fmt:message key="label.attendance"/><span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="Attendance_Controller_servlet"><fmt:message key="label.take_attendance"/></a></li>
+						<li><a href="attendance_retrieve.jsp"><fmt:message key="label.check_attendance"/></a></li>       
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><fmt:message key="label.Result_list"/><span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="Explicit_Mark_Sheet_Controller_Servlet"><fmt:message key="label.explicit_mark_sheet"/></a></li>
+			            <li><a href="Mid_Term_Controller_Servlet"><fmt:message key="label.mid_term"/></a></li>
+			            <li><a href="Semester_Final_Controller_Servlet"><fmt:message key="label.semester_final"/></a></li>
+			            <li><a href="Total_Mark_Sheet_Controller_Servlet"><fmt:message key="label.total_result"/></a></li>
+			          </ul>
+			        </li>
+			        <li>
+			        	<a><script> document.write(new Date().toLocaleDateString()); </script></a>	
+					</li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+
+			      	<li >
+			      		 <form action="Registration_Controller_Servlet" method="post" class="form-inline" style="margin-top: 8px; height: 30px; border-radius: 5px;width:80%; margin-left:10px;" >
+			      			<input class="form-control form-control-sm" type="text/submit" name="student_name"  placeholder="<fmt:message key='label.search'/>" aria-label="Search" style="border-radius: 2px;">		      			
+			      		</form>				 
+				    </li>
+			        <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-user" ></span></a></li>
+			       <!-- <li><a href="#" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span></a></li>-->
+			        <li><a href="LogoutServlet"><span class="glyphicon glyphicon-log-out"></span></a></li>
+
+			      </ul>
+
+			    </div>
+			  </div>
+			</nav>
+    </header> 
+    <div class="container">
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>
