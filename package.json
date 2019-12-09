@@ -11,7 +11,7 @@
   "author": "Md. Jihad Hossain",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "electron": "4.2.6",
     "electron-reload": "^1.5.0",
     "knex": "^0.20.2",
